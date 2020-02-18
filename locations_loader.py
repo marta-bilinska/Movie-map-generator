@@ -1,7 +1,7 @@
 import geocoder
 import time
 import pandas as pd
-from . import movie_map_generator
+from . import main
 
 
 def create_file():
@@ -41,7 +41,7 @@ def not_yet_loaded():
     all of the unique locations and those
     transfered to the file with coordinates.
     """
-    source = set(movie_map_generator.unique_locations(movie_map_generator.location_df_generator(movie_map_generator.input_collector)))
+    source = set(main.unique_locations(main.location_df_generator(main.input_collector)))
     done = pd.read_csv('location_geodata.csv')
     done = set(done['location'])
     return source.difference(done)

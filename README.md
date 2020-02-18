@@ -1,7 +1,7 @@
 # Movie Map Generator
 
 ## About
-### Movie map generator module
+### Main module
 This project is designed to show the user the nearest locations of the movies filmed in a certain year based on his location.
 The movie_map_generator.py module processes location.list file and creates the html page with a map, which contains up to ten nearest locations to the user.
 For every location there is a film that represents it. 
