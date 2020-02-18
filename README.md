@@ -2,7 +2,7 @@
 
 ## About
 ### Movie map generator module
-This project is designed to show the user the nearest locations of the movie filmed in a certain year based on his location.
+This project is designed to show the user the nearest locations of the movies filmed in a certain year based on his location.
 The movie_map_generator.py module processes location.list file and creates the html page with a map, which contains up to ten nearest locations to the user.
 For every location there is a film that represents it. 
 ### Population density layer module
@@ -17,6 +17,8 @@ Color code:
 The project also contains a second module location_loader.py which is designed to load coordinates of unique locations to a file location_geodata.csv. 
 This is done with the help of geocoder library and OpenStreetMap service.
 The location_loader.py module is resilient geo coding service outages and can be restarted to load rest of the data.
+The project already has preloaded data about location's coordinates in location_geodata.csv, so there's no need to run the module.
+Though it can be useful for loading geodata from a different provider (such as google, ect.)
 ## How can it be useful?
 
 It’s would be useful for any movie locations research, as it is easy to use and a good way of visualizing information.
