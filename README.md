@@ -1,11 +1,11 @@
 # Movie Map Generator
 
-##About
-### Movie Map Generator
+## About
+### Movie map generator module
 This project is designed to show the user the nearest locations of the movie filmed in a certain year based on his location.
 The movie_map_generator.py module processes location.list file and creates the html page with a map, which contains up to ten nearest locations to the user.
 For every location there is a film that represents it. 
-### Population density layer
+### Population density layer module
 There is also a second layer to the map and it colors the map according to population density in that country. 
 Color code:
    - white - 0 to 100 persons per sq. km
@@ -13,7 +13,7 @@ Color code:
    - orange - 500 - 1500 persons per sq. km
    - red - more than 1500 persons per sq. km
 
-### Location Loader
+### Location loader module
 The project also contains a second module location_loader.py which is designed to load coordinates of unique locations to a file location_geodata.csv. 
 This is done with the help of geocoder library and OpenStreetMap service.
 The location_loader.py module is resilient geo coding service outages and can be restarted to load rest of the data.
@@ -23,11 +23,22 @@ It’s would be useful for any movie locations research, as it is easy to use an
 It also useful for comparing the population density, which is another tile the map has, to density of movies shot near a certain location.
 
 ## How does it work?
+
 This is an example of how the program works.
-![](ss4.png)
+
+```Please enter a year you would like to have a map for: 2014
+Your latitude: 49.87654
+Your longitude: 24.03245
+The map is loading...
+Please wait...
+You can find your map here: 'map.html' 
+```
+
 ![](screenshot3.png)
 
+
 More examples of the generated maps.
+
 
 ![](screenshot2.png)
 
